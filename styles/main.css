@@ -2,49 +2,139 @@
   CSS Reset
 ========================================*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 
 /*=======================================
   Global Styles
@@ -52,8 +142,9 @@ table {
 
 body {
   font-family: 'Lato', Arial, sans-serif;
-  background-color:	#D3D3D3;
+  background-color: #D3D3D3;
 }
+
 
 /*=======================================
   Container
@@ -64,13 +155,10 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  width: 65rem;
+  overflow: hidden;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 65rem;
-  }
-}
 
 /*=======================================
   Navigation
@@ -106,6 +194,7 @@ li a {
   border-bottom: 3px solid white;
 }
 
+
 /*=======================================
   Header
 ========================================*/
@@ -139,6 +228,7 @@ li a {
   margin-left: auto;
 }
 
+
 /*=======================================
   Objective
 ========================================*/
@@ -151,3 +241,95 @@ li a {
   box-shadow: inset 0px 7px 20px -5px rgba(0, 0, 0, 0.5);
 }
 
+
+/*=======================================
+  Main
+========================================*/
+
+.main {
+  background-color: white;
+}
+
+.left {
+  float: left;
+  position: relative;
+  padding: 2.5rem 2.5rem 2.5rem 5rem;
+  background-color: white;
+}
+
+.personal {
+  padding-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+td {
+  padding-bottom: 0.8rem;
+}
+
+td:first-child {
+  padding-right: 1rem;
+  padding-top: 0.8rem;
+}
+
+td:nth-child(2) {
+  color: #586268;
+  font-weight: 300;
+}
+
+.right {
+  float: right;
+  width: 31rem;
+  position: relative;
+  padding: 2.5rem;
+  background-color: #EEEEEE;
+  box-shadow: inset 7px 0 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #EEEEEE;
+}
+
+.progress-bar .progress-bar-fill {
+  height: 0.5rem;
+  background-color: #1da2d9;
+}
+
+.section-title {
+  color: #1D84CA;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.software {
+  padding-bottom: 2rem;
+}
+
+.hobby-container {
+  padding-top: 0.5rem;
+  display: inline-block;
+  width: 30%;
+}
+
+.hobby-container i {
+  background-color: #9AC6E5;
+  color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 1.2rem;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
