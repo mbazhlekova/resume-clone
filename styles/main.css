@@ -151,14 +151,14 @@ body {
 ========================================*/
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
   width: 65rem;
-  overflow: hidden;
+  margin: 0 auto;
 }
 
+.clear {
+  clear:both;
+  line-height:0;
+}
 
 /*=======================================
   Navigation
@@ -261,7 +261,9 @@ li a {
   padding-bottom: 2rem;
 }
 
-table {
+.software,
+.personal,
+.hobbies table {
   width: 100%;
 }
 
@@ -332,4 +334,128 @@ td:nth-child(2) {
   font-size: 0.8rem;
   text-align: center;
   padding-top: 0.5rem;
+}
+
+.big-circle {
+  background-color: #89C6EC;
+  height: 1.55rem;
+  width: 1.55rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+
+.small-circle {
+  background-color: #258BC3;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  top: 0.4rem;
+  position: relative;
+}
+
+.work-timeline:not(:first-child) {
+  padding-top: 1rem;
+}
+
+.work-timeline {
+  padding-bottom: 2rem;
+}
+
+.work-timeline-info {
+  padding-left: 3rem;
+  display: inline-block;
+  position: relative;
+  width: 22rem;
+}
+
+.work-timeline-info h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.work-timeline-info p {
+  font-weight: 300;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+}
+
+.connector-one {
+  height: 11.5rem;
+  width: 0.2rem;
+  background-color: #89C6EC;
+  position: absolute;
+  top: 6.8rem;
+  left: 3.2rem;
+}
+
+.circle-container {
+  padding-top: 0.5rem;
+  display: inline-block;
+}
+
+.circles {
+  padding-bottom: 1rem;
+}
+
+.connector-two {
+  height: 12.5rem;
+  width: 0.2rem;
+  background-color: #89C6EC;
+  position: absolute;
+  top: 37.6rem;
+  left: 3.2rem;
+}
+
+.education {
+  padding-top: 1.5rem;
+}
+
+.education-timeline {
+  padding-top: 1.5rem;
+}
+
+/*=======================================
+  Web links
+========================================*/
+.web-links {
+  background-color: #0AA1DA;
+  color: white;
+  text-align: center;
+}
+
+.web-icon-container {
+  display: inline-block;
+}
+
+.web-icon i {
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: #0689CD
+}
+
+.web-icon {
+  padding: 2rem;
+  display: inline-block;
+}
+
+/*=======================================
+  Contact Info
+========================================*/
+.contact-info {
+  background-color: #0088CE;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact-info p {
+  text-align: center;
+}
+
+.contact-info-text {
+  text-align: center;
 }
